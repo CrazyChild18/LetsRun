@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FriendActivity"
+    android:background="@drawable/run_back">
+
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/colorPrimaryDark">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_exit"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tx_login_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:text="Friends"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/friend_search"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_below="@+id/head"
+        android:hint="Search friend username here"
+        android:layout_toLeftOf="@+id/friend_search_button"
+        android:gravity="center"
+        android:background="@drawable/btn_background"
+        android:layout_marginTop="5sp"/>
+
+    <Button
+        android:id="@+id/friend_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_below="@+id/head"
+        android:layout_alignParentRight="true"
+        android:text="Add"
+        android:gravity="center"
+        android:background="@drawable/btn_background"
+        android:layout_marginTop="5sp"/>
+
+    <!--好友列表-->
+    <ListView
+        android:id="@+id/friend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/friend_search"
+        android:layout_marginTop="5sp"/>
+
+
+</RelativeLayout>

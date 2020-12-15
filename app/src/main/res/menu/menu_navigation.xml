@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/single_3"
+            android:icon="@drawable/ic_trace"
+            android:title="Start Run"/>
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_1"
+            android:icon="@drawable/ic_data"
+            android:title="My Data"/>
+
+        <item
+            android:id="@+id/Friends"
+            android:icon="@drawable/ic_friend"
+            android:title="Friends"/>
+    </group>
+
+    <item
+        android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/item_3"
+                android:icon="@drawable/ic_about"
+                android:title="About"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/run_back">
+
+        <!--头像部分-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/colorPrimaryDark">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_exit"
+                android:padding="10dp"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/img_user_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_avatar" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tx_login_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="未登录"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="Nickname: "
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:background="@drawable/btn_background"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Age: "
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:background="@drawable/btn_background"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="Gender: "
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="Birthday: "
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/btn_background"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/run"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</ScrollView>
